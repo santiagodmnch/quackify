@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Quackify",
+  "version": "1.0",
+  "description": "Generate and copy Duck.com email addresses",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "quackify@example.com"
+    }
+  },
+  "permissions": [
+    "clipboardWrite",
+    "storage",
+    "notifications",
+    "tabs",
+    "activeTab",
+    "<all_urls>",
+    "https://quack.duckduckgo.com/*"
+  ],
+  "browser_action": {
+    "default_icon": "icons/icon-32.png",
+    "default_title": "Generate Duck Email",
+    "default_popup": "popup/popup.html"
+  },
+  "options_ui": {
+    "page": "options/options.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  }
+} 
